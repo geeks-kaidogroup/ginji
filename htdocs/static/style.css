@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .cf {
+.float-list, .wrap, .l-contents, .l-strong-contents .infobox, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .l-strong-contents .infobox:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -119,6 +119,13 @@ h3 {
 
 h4 {
   padding: 0 0 20px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #2b2b2b;
+  letter-spacing: -0.9px;
 }
 
 /*==============================
@@ -202,6 +209,52 @@ h4 {
 }
 .l-contents .l-breadcrumb a {
   color: #004986;
+}
+.l-contents .l-breadcrumb {
+  padding: 0 0 15px;
+  color: #333333;
+  font-size: 14px;
+}
+.l-contents .l-breadcrumb a {
+  color: #004986;
+}
+
+/*==============================
+03_専門店の強み_銀次様 strong.html
+==============================*/
+.l-rinen {
+  padding: 0 0 40px;
+}
+
+.l-strong-contents {
+  padding: 0 0 50px;
+}
+.l-strong-contents .red {
+  font-weight: bold;
+  color: #b01f24;
+}
+.l-strong-contents .infobox {
+  padding: 0 0 50px;
+}
+.l-strong-contents .infobox .infobox-thumb {
+  float: left;
+  width: 232px;
+  padding: 0 21px 0 0;
+  font-size: 0;
+}
+.l-strong-contents .infobox .infobox-thumb img:nth-child(n+1) {
+  padding: 0 0 15px;
+}
+.l-strong-contents .infobox .infobox-thumb img:last-child {
+  padding: 0;
+}
+.l-strong-contents .infobox .infobox-text {
+  float: right;
+  width: 527px;
+}
+.l-strong-contents .strong-certificate {
+  padding: 40px 0 30px;
+  text-align: center;
 }
 
 /*==============================
