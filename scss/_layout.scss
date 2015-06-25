@@ -192,6 +192,52 @@ p{
     }
 }
 
+/*==============================
+04_職人紹介_銀次様 introduce.html
+==============================*/
+.l-introduce{
+    padding: 0 0 115px;
+    .intro-box{
+        @extend %extend-cf;
+        padding: 0 0 55px;
+        .intro-box-thumb{
+            float: left;
+            font-size: 0;
+            width: 200px;
+            padding: 0 20px 0 0;
+            img:nth-child(n+1){
+                padding: 0 0 15px 0;
+            }
+            img:last-child{
+                padding: 0;
+            }
+        }
+        .intro-box-table{
+            float: right;
+            width: 560px;
+            th, td{
+                border: 1px solid #000;
+                padding: 15px 0 15px 0;
+                font-size: 17px;
+                line-height: 25px;
+                letter-spacing: -0.6px;
+                color: #333333;
+            }
+            th{
+                width: 210px;
+                background: #f7f7f7;
+                text-align: center;
+            }
+            td{
+                width: 340px;
+                padding: 15px 0 15px 10px;
+            }
+
+        }
+    }
+}
+
+
 // ============================
 // l-side
 // ============================
