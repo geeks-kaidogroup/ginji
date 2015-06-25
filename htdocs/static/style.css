@@ -1,0 +1,461 @@
+@charset "UTF-8";
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* General */
+.float-list, .wrap, .l-contents, .cf {
+  *zoom: 1;
+}
+.float-list:after, .wrap:after, .l-contents:after, .cf:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.float-list li {
+  float: left;
+}
+
+/* Base */
+body {
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo', 'メイリオ', 'sans-serif';
+}
+
+a {
+  color: #253059;
+  text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+/* Layout */
+/*==============================
+共通要素
+==============================*/
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*==============================
+タイトルバー
+==============================*/
+.l-titlebar {
+  width: 100%;
+  height: 25px;
+  background: #b01f24;
+}
+.l-titlebar h1 {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 25px;
+  color: #fff;
+}
+
+h2 {
+  padding: 0 0 30px;
+}
+
+h3 {
+  padding: 0 0 15px;
+}
+
+h4 {
+  padding: 0 0 20px;
+}
+
+/*==============================
+ヘッダー
+==============================*/
+.l-header {
+  width: 100%;
+  height: 113px;
+  background: #fdfdfd;
+}
+.l-header .header-logo {
+  float: left;
+}
+.l-header .header-logo {
+  margin: 10px 0 0 0;
+}
+.l-header .header-btn {
+  float: right;
+}
+.l-header .header-btn .header-list {
+  padding: 15px 0 0 15px;
+}
+.l-header .header-btn .header-list li {
+  margin: 0 0 0 15px;
+}
+
+/*==============================
+メインビジュアル
+==============================*/
+.l-mv {
+  width: 100%;
+  background: url(assets/img/top/top_mv_bg.png);
+  padding: 15px 0;
+}
+.l-mv .mv-main {
+  float: left;
+}
+.l-mv .mv-side {
+  float: right;
+}
+.l-mv .mv-side .mv-side-list li {
+  margin: 0 0 10px 0;
+}
+
+/*==============================
+グローバルナビ
+==============================*/
+.l-navi {
+  width: 100%;
+  height: 47px;
+  background: url(assets/img/layout/navi/navi_bg.png);
+}
+.l-navi .navi-list {
+  width: 1000px;
+  margin: 0 auto;
+}
+.l-navi .navi-list li {
+  height: 45px;
+}
+
+/*==============================
+コンテンツ
+==============================*/
+.l-contents {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+.l-contents .l-main {
+  float: right;
+  width: 780px;
+}
+.l-contents .l-side {
+  float: left;
+  width: 200px;
+}
+.l-contents .l-breadcrumb {
+  padding: 0 0 15px;
+  color: #333333;
+  font-size: 14px;
+}
+.l-contents .l-breadcrumb a {
+  color: #004986;
+}
+
+/*==============================
+サイドバー
+==============================*/
+.l-side {
+  min-height: 4425px;
+  background: url(assets/img/layout/side/side_bg.png) repeat;
+}
+.l-side img {
+  display: block;
+  line-height: 1;
+}
+.l-side .side-list-top {
+  padding: 0 0 5px;
+  background: #fff;
+  border-bottom: 1px dashed #0d0d0d;
+}
+.l-side .side-list-top li {
+  margin: 0 0 15px;
+}
+.l-side .side-navi-list {
+  padding: 20px 0 10px 0;
+  background: #fff;
+  border-bottom: 1px dashed #0d0d0d;
+}
+.l-side .side-navi-list li {
+  margin: 0 0 10px 0;
+}
+.l-side .side-list-bottom {
+  padding: 20px 0 0 0;
+  background: #fff;
+}
+.l-side .side-list-bottom li {
+  margin: 0 0 15px 0;
+}
+
+/*==============================
+フッター
+==============================*/
+.l-footer {
+  width: 100%;
+  padding: 35px 0;
+  color: #fff;
+  background: #ab1b20;
+}
+.l-footer .l-footer-left {
+  float: left;
+  width: 440px;
+}
+.l-footer .l-footer-left .footer-logo {
+  margin: 0 0 20px 0;
+}
+.l-footer .l-footer-left .footer-address {
+  margin: 0 0 25px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+.l-footer .l-footer-left .footer-banner {
+  margin: 0 0 10px 0;
+}
+.l-footer .l-footer-left .footer-banner .banner-copy {
+  margin: 0 0 2px 4px;
+}
+.l-footer .l-footer-left .footer-banner .banner-a {
+  float: left;
+  margin: 0 10px 0 0;
+}
+.l-footer .l-footer-left .footer-copyright {
+  font-size: 11px;
+}
+.l-footer .l-footer-right {
+  float: right;
+  width: 560px;
+}
+.l-footer .l-footer-right .footer-navi-box {
+  float: left;
+  padding: 0 30px 0 10px;
+  border-left: 1px solid #b48f92;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-navi-list li {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-navi-list li:before {
+  content: ">";
+  margin: 0 5px 0 0;
+}
+.l-footer .l-footer-right .footer-navi-box .footer-bold-list li {
+  font-weight: bold;
+}
+
+/*==============================
+トップページ
+==============================*/
+.top-headline {
+  margin: 0 0 25px 0;
+}
+.top-headline .column {
+  padding: 10px 20px 0 20px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.l-top-catch {
+  padding: 0 0 45px 0;
+}
+.l-top-catch .top-catch-box p {
+  margin: 20px 0 25px 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+.l-top-catch .top-catch-box .top-catch-photo {
+  float: right;
+  display: inline;
+  margin: 0 0 0 40px;
+}
+
+.l-top-news {
+  padding: 0 0 80px 0;
+}
+.l-top-news .top-news-list li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 2px dotted #808080;
+}
+.l-top-news .top-news-list li:first-child {
+  padding: 0 0 10px 0;
+}
+.l-top-news .top-news-list li .category {
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 4px 12px;
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.l-top-news .top-news-list li .category-blog {
+  background: #7e2231;
+}
+.l-top-news .top-news-list li .category-column {
+  background: #aa6f21;
+}
+.l-top-news .top-news-list li .title {
+  margin: 0 0 0 10px;
+  color: #253059;
+}
+.l-top-news .top-news-list li a {
+  text-decoration: none;
+}
+.l-top-news .top-news-list li a:hover {
+  text-decoration: underline;
+}
+
+.l-top-belief {
+  padding: 0 0 20px 0;
+}
+.l-top-belief img {
+  display: block;
+  line-height: 1;
+}
+
+.l-top-voice .shop-image {
+  margin: 0 0 30px 0;
+}
+.l-top-voice .voice-list {
+  width: 810px;
+}
+.l-top-voice .voice-list li {
+  margin: 0 30px 30px 0;
+  width: 240px;
+}
+.l-top-voice .voice-list li .voice-head {
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  background: #823333;
+}
+.l-top-voice .voice-list li .voice-photo img {
+  display: block;
+  line-height: 1;
+}
+.l-top-voice .voice-list li .voice-detail {
+  padding: 10px;
+  background: #f0f0f0;
+}
+.l-top-voice .voice-list li .voice-detail .text {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.l-top-voice .voice-list li .voice-detail .condition {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+}
+.l-top-voice .voice-list li .voice-detail .name {
+  font-size: 12px;
+}
+.l-top-voice .top-voice-btn {
+  display: table;
+  margin: 0 auto;
+}
+
+.l-top-works {
+  padding: 0 0 10px 0;
+}
+.l-top-works .works-list {
+  width: 810px;
+}
+.l-top-works .works-list li {
+  margin: 0 30px 30px 0;
+  width: 240px;
+}
+.l-top-works .works-list li .works-head {
+  padding: 5px 0;
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid #f0f0f0;
+}
+.l-top-works .works-list li .works-photo img {
+  display: block;
+  line-height: 1;
+}
+.l-top-works .works-list li .works-detail {
+  padding: 10px;
+  background: #f0f0f0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.l-top-works .top-works-btn {
+  display: table;
+  margin: 0 auto;
+}
+
+.l-main-foot {
+  padding: 0 0 65px;
+}
+.l-main-foot .foot-banner-tel {
+  display: table;
+  margin: 0 auto 30px auto;
+}
+.l-main-foot .foot-banner {
+  display: table;
+  margin: 0 auto;
+}
+.l-main-foot .foot-list {
+  padding: 25px 0 60px 0;
+}
+.l-main-foot .foot-list li {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.l-main-foot .foot-list li:last-child {
+  margin: 0;
+}

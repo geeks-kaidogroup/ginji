@@ -1,0 +1,46 @@
+@charset "utf-8";
+// ====================================
+// 共通で使う変数を設定
+// ====================================
+// font-size
+$fs-xsmall: 10px;
+$fs-small: 12px;
+$fs-medium: 14px;
+$fs-large: 16px;
+$fs-xlarge: 18px;
+
+// color
+$fc-base: #000;
+$fc-reverse: #fff;
+$fc-weak: #999;
+$fc-strong: #ff6633;
+$fc-alert: #ff6600;
+$fc-system: #0085cc;
+$fc-link: #000;
+$fc-visited: #000;
+$fc-hover: #999;
+
+// background-color
+$bg-body: #fff;;
+$bg-reverse: #000;
+
+// etc
+$base-line-height: 1.5;
+
+
+// ============================
+// メインコンテンツ幅を指定する
+// ※ $side = $contentsWidth - $mainWidth - $contentsMargin
+// ============================
+$contentsWidth: 1000px;
+$mainWidth: px;
+$contentsMargin: px;
+$sideWidth: $contentsWidth - $mainWidth - $contentsMargin;
+
+
+// ============================
+// 共通カラーを指定する
+// ※aタグは_base.scssへ
+// ============================
+$companyColor: #000000;
+$companySubColor: #000000;
