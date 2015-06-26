@@ -109,25 +109,6 @@ a:hover, a:active, a:focus {
   color: #fff;
 }
 
-h2 {
-  padding: 0 0 30px;
-}
-
-h3 {
-  padding: 0 0 15px;
-}
-
-h4 {
-  padding: 0 0 20px;
-}
-
-p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #2b2b2b;
-  letter-spacing: -0.9px;
-}
-
 /*==============================
 ヘッダー
 ==============================*/
@@ -211,12 +192,21 @@ p {
   color: #004986;
 }
 .l-contents .l-breadcrumb {
-  padding: 0 0 15px;
+  padding: 0 0 10px;
   color: #333333;
   font-size: 14px;
 }
 .l-contents .l-breadcrumb a {
-  color: #004986;
+  color: #e8340c;
+}
+.l-contents h2 {
+  padding: 0 0 30px;
+}
+.l-contents h3 {
+  padding: 0 0 15px;
+}
+.l-contents h4 {
+  padding: 0 0 20px;
 }
 
 /*==============================
@@ -228,6 +218,12 @@ p {
 
 .l-strong-contents {
   padding: 0 0 50px;
+}
+.l-strong-contents p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #2b2b2b;
+  letter-spacing: -0.9px;
 }
 .l-strong-contents .red {
   font-weight: bold;

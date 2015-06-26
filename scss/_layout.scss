@@ -32,21 +32,7 @@
 	}
 }
 
-h2{
-    padding: 0 0 30px;
-}
-h3{
-    padding: 0 0 15px;
-}
-h4{
-    padding: 0 0 20px;
-}
-p{
-    font-size: 14px;
-    line-height: 24px;
-    color: #2b2b2b;
-    letter-spacing: -0.9px;
-}
+
 // ============================
 // l-header
 // ============================
@@ -144,12 +130,21 @@ p{
     }
 
     .l-breadcrumb{
-        padding: 0 0 15px;
+        padding: 0 0 10px;
         color: #333333;
         font-size: 14px;
         a{
-            color: #004986;
+            color: #e8340c;
         }
+    }
+    h2{
+        padding: 0 0 30px;
+    }
+    h3{
+        padding: 0 0 15px;
+    }
+    h4{
+        padding: 0 0 20px;
     }
 }
 
@@ -161,6 +156,12 @@ p{
 }
 .l-strong-contents{
     padding: 0 0 50px;
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #2b2b2b;
+        letter-spacing: -0.9px;
+    }
     .red{
         font-weight: bold;
         color:#b01f24;
