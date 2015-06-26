@@ -199,19 +199,20 @@ a:hover, a:active, a:focus {
 .l-contents .l-breadcrumb a {
   color: #e8340c;
 }
-.l-contents h2 {
-  padding: 0 0 30px;
-}
-.l-contents h3 {
-  padding: 0 0 15px;
-}
-.l-contents h4 {
-  padding: 0 0 20px;
-}
 
 /*==============================
 03_専門店の強み_銀次様 strong.html
 ==============================*/
+.page-strong h2, page-introduce h2 {
+  padding: 0 0 30px;
+}
+.page-strong h3, page-introduce h3 {
+  padding: 0 0 15px;
+}
+.page-strong h4, page-introduce h4 {
+  padding: 0 0 20px;
+}
+
 .l-rinen {
   padding: 0 0 40px;
 }
