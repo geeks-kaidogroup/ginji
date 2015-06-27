@@ -279,6 +279,30 @@
         text-align: center;
     }
 }
+
+// ============================
+// 06_okyakusamanokoe (voice.html)
+// ============================
+.l-voice{
+    .voice-message{
+        padding: 30px 0 60px;
+        text-align: center;
+    }
+    .pagination{
+        padding: 0 0 75px;
+        text-align: right;
+        li{
+            display: inline;
+            padding: 0 0 0 10px;
+            a{
+                color: #e8340c;
+            }
+            &.arrow a{
+                text-decoration: none;
+            }
+        }
+    }
+}
 // ============================
 // l-side
 // ============================
@@ -451,7 +475,7 @@
 		line-height:1;
 	}
 }
-.l-top-voice {
+.l-top-voice, .l-voice {
 	.shop-image{
 		margin:0 0 30px 0;
 	}

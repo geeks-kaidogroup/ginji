@@ -333,6 +333,25 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 
+.l-voice .voice-message {
+  padding: 30px 0 60px;
+  text-align: center;
+}
+.l-voice .pagination {
+  padding: 0 0 75px;
+  text-align: right;
+}
+.l-voice .pagination li {
+  display: inline;
+  padding: 0 0 0 10px;
+}
+.l-voice .pagination li a {
+  color: #e8340c;
+}
+.l-voice .pagination li.arrow a {
+  text-decoration: none;
+}
+
 /*==============================
 サイドバー
 ==============================*/
@@ -493,17 +512,17 @@ a:hover, a:active, a:focus {
   line-height: 1;
 }
 
-.l-top-voice .shop-image {
+.l-top-voice .shop-image, .l-voice .shop-image {
   margin: 0 0 30px 0;
 }
-.l-top-voice .voice-list {
+.l-top-voice .voice-list, .l-voice .voice-list {
   width: 810px;
 }
-.l-top-voice .voice-list li {
+.l-top-voice .voice-list li, .l-voice .voice-list li {
   margin: 0 30px 30px 0;
   width: 240px;
 }
-.l-top-voice .voice-list li .voice-head {
+.l-top-voice .voice-list li .voice-head, .l-voice .voice-list li .voice-head {
   padding: 10px 0;
   margin: 0 0 10px 0;
   font-size: 14px;
@@ -511,27 +530,27 @@ a:hover, a:active, a:focus {
   color: #FFF;
   background: #823333;
 }
-.l-top-voice .voice-list li .voice-photo img {
+.l-top-voice .voice-list li .voice-photo img, .l-voice .voice-list li .voice-photo img {
   display: block;
   line-height: 1;
 }
-.l-top-voice .voice-list li .voice-detail {
+.l-top-voice .voice-list li .voice-detail, .l-voice .voice-list li .voice-detail {
   padding: 10px;
   background: #f0f0f0;
 }
-.l-top-voice .voice-list li .voice-detail .text {
+.l-top-voice .voice-list li .voice-detail .text, .l-voice .voice-list li .voice-detail .text {
   margin: 0 0 10px 0;
   font-size: 14px;
   line-height: 20px;
 }
-.l-top-voice .voice-list li .voice-detail .condition {
+.l-top-voice .voice-list li .voice-detail .condition, .l-voice .voice-list li .voice-detail .condition {
   margin: 0 0 5px 0;
   font-size: 12px;
 }
-.l-top-voice .voice-list li .voice-detail .name {
+.l-top-voice .voice-list li .voice-detail .name, .l-voice .voice-list li .voice-detail .name {
   font-size: 12px;
 }
-.l-top-voice .top-voice-btn {
+.l-top-voice .top-voice-btn, .l-voice .top-voice-btn {
   display: table;
   margin: 0 auto;
 }
