@@ -304,6 +304,104 @@
     }
 }
 // ============================
+// single-voice.html
+// ============================
+/*==============================
+==============================*/
+.l-single-voice{
+   margin-bottom: 58px;
+    h2{
+        padding: 0 0 30px;
+    }
+    h3{
+        padding: 0 0 15px;
+    }
+    .single-voice-head{
+        margin-top: -3px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 14px;
+        color: #474343;
+        line-height: 25px;
+    }
+   .single-voice-pic{
+       margin: 22px 0 0;
+       li{
+           float: left;
+           padding: 0 0 20px;
+           &:nth-child(2n){
+               float:right;
+            }
+       }
+   }
+    .single-voice-box{
+        @extend %extend-cf;
+        .single-voice-box-thumb{
+           float: left;
+            width: 380px;
+        }
+        .single-vocie-box-text{
+            float: right;
+            width: 380px;
+            padding: 0 0 0 20px;
+        }
+    }
+    .photo-mix {
+        margin-top: 74px;
+        text-align: center;
+    }
+}
+// ============================
+// 07_sekoutaku (works.html)
+// ============================
+.l-works{
+    @extend .l-voice;
+    .works-message{
+        @extend .voice-message;
+    }
+}
+//============================
+// 08_media
+//============================
+.l-media{
+    margin:0 0 115px;
+    h2{
+        margin: 0 0 25px;
+    }
+    .media-text{
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: bold;
+        font-family: Meiryo;
+        margin: 0 0 30px;
+        color: #434343;
+    }
+    .media-box{
+        @extend %extend-cf;
+        margin: 0 0 40px;
+        .media-box-thumb{
+            float: left;
+            width: 345px;
+            padding: 0 20px 0 0;
+        }
+        .media-box-text{
+            float: right;
+            width: 410px;
+            >p{
+                font-size: 14px;
+                line-height: 20px;
+                color: #434343;
+            }
+            .media-title{
+                margin: 12px 0 0;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+// ============================
 // l-side
 // ============================
 /*==============================
@@ -522,7 +620,7 @@
 		margin:0 auto;
 	}
 }
-.l-top-works {
+.l-top-works, .l-works {
 	padding:0 0 10px 0;
 	.works-list {
 		width:810px;
