@@ -240,7 +240,45 @@
     }
 }
 
-
+// ============================
+// 05_sekounonagare (flow.html)
+// ============================
+.l-flow-contents{
+    padding: 0 0 65px;
+    h2{
+        font-size: 0;
+    }
+    h3{
+        padding: 33px 0 30px
+    }
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        color: #434343;
+        letter-spacing: -1px;
+        &.headline{
+            font-weight: bold;
+        }
+    }
+    .flowbox{
+        @extend %extend-cf;
+        padding: 0 0 17px;
+        .flowbox-thumb{
+           float: left;
+            font-size: 0;
+            width: 345px;
+            padding: 0 30px 0 0;
+        }
+        .flowbox-text{
+            float: left;
+            width: 405px;
+        }
+    }
+    .flow-emotion{
+        padding: 53px 0 0;
+        text-align: center;
+    }
+}
 // ============================
 // l-side
 // ============================

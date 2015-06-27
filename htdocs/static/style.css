@@ -57,10 +57,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* General */
-.float-list, .wrap, .l-contents, .l-strong-contents .infobox, .l-introduce .intro-box, .cf {
+.float-list, .wrap, .l-contents, .l-strong-contents .infobox, .l-introduce .intro-box, .l-flow-contents .flowbox, .cf {
   *zoom: 1;
 }
-.float-list:after, .wrap:after, .l-contents:after, .l-strong-contents .infobox:after, .l-introduce .intro-box:after, .cf:after {
+.float-list:after, .wrap:after, .l-contents:after, .l-strong-contents .infobox:after, .l-introduce .intro-box:after, .l-flow-contents .flowbox:after, .cf:after {
   content: "";
   display: block;
   clear: both;
@@ -295,6 +295,42 @@ a:hover, a:active, a:focus {
 .l-introduce .intro-box .intro-box-table td {
   width: 340px;
   padding: 15px 0 15px 10px;
+}
+
+.l-flow-contents {
+  padding: 0 0 65px;
+}
+.l-flow-contents h2 {
+  font-size: 0;
+}
+.l-flow-contents h3 {
+  padding: 33px 0 30px;
+}
+.l-flow-contents p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #434343;
+  letter-spacing: -1px;
+}
+.l-flow-contents p.headline {
+  font-weight: bold;
+}
+.l-flow-contents .flowbox {
+  padding: 0 0 17px;
+}
+.l-flow-contents .flowbox .flowbox-thumb {
+  float: left;
+  font-size: 0;
+  width: 345px;
+  padding: 0 30px 0 0;
+}
+.l-flow-contents .flowbox .flowbox-text {
+  float: left;
+  width: 405px;
+}
+.l-flow-contents .flow-emotion {
+  padding: 53px 0 0;
+  text-align: center;
 }
 
 /*==============================
