@@ -240,9 +240,9 @@
     }
 }
 
-// ============================
-// 05_sekounonagare (flow.html)
-// ============================
+/* ============================
+ 05_sekounonagare (flow.html)
+ ============================*/
 .l-flow-contents{
     padding: 0 0 65px;
     h2{
@@ -280,9 +280,9 @@
     }
 }
 
-// ============================
-// 06_okyakusamanokoe (voice.html)
-// ============================
+/* ============================
+ 06_okyakusamanokoe (voice.html)
+// ============================*/
 .l-voice{
     .voice-message{
         padding: 30px 0 60px;
@@ -303,11 +303,9 @@
         }
     }
 }
-// ============================
-// single-voice.html
-// ============================
-/*==============================
-==============================*/
+/* ========================================
+ single-voice.html 06_お客様が語る塗替銀次
+ ========================================*/
 .l-single-voice{
    margin-bottom: 58px;
     h2{
@@ -352,18 +350,81 @@
         text-align: center;
     }
 }
-// ============================
-// 07_sekoutaku (works.html)
-// ============================
+/*==============================
+ 07_sekoutaku (works.html)
+// ============================*/
 .l-works{
     @extend .l-voice;
     .works-message{
         @extend .voice-message;
     }
 }
-//============================
-// 08_media
-//============================
+
+/*==============================
+single-works 07_ご近所の施工宅
+==============================*/
+.l-single-works{
+    margin-bottom: 53px;
+    h2{
+        padding: 0 0 30px;
+    }
+    h3{
+        padding: 0 0 23px;
+    }
+    .single-works-head{
+        margin-bottom: 39px;
+    }
+    .single-works-text-right{
+        float: right;
+        margin-bottom: 39px;
+        p{
+            font-size: 14px;
+            color: #720f10;
+        }
+    }
+    .single-works-pic{
+        margin-bottom: 23px;
+    }
+    .single-works-box{
+       @extend %extend-cf;
+        margin-bottom: 22px;
+       .single-works-thumb{
+            float: left;
+            width: 345px;
+        }
+        .single-works-text{
+            float: right;
+            width: 410px;
+            padding: 0 0 0 25px;
+            p{
+                font-size: 14px;
+                color: #434343;
+                line-height: 20px;
+            }
+        }
+    }
+    .single-works-footer{
+        p{
+            font-size: 14px;
+            color: #333333;
+            line-height: 28px;
+        }
+        .single-works-btn{
+            text-align: center;
+            margin: 74px 0 55px;
+        }
+        .back-page{
+            text-align: center;
+            font-size: 14px;
+            a{
+                color: #004986;
+            }
+        }
+    }
+}
+//=================================
+// 08_media メディア掲載 (media.html)
+//=================================
 .l-media{
     margin:0 0 115px;
     h2{
@@ -399,6 +460,340 @@
                 line-height: 20px;
             }
         }
+    }
+}
+//======================================
+// 09_hosyou 塗替銀次の保証 (wanranty.html)
+//======================================
+.l-wanranty{
+    margin: 0 0 65px;
+    h2{
+       margin: 0 0 25px;
+    }
+    .wanranty-head{
+        margin: 0 0 20px;
+        @extend %extend-cf;
+        .wanranty-head-text{
+            float: left;
+            width: 535px;
+            >p{
+                font-size: 14px;
+                line-height: 22px;
+                font-family: Meiryo;
+                color: #434343;
+                margin: 0 0 22px;
+            }
+        }
+        img{
+            float: right;
+        }
+    }
+    .warranty-contents{
+        line-height: 20px;
+        font-size: 14px;
+        color: #434343;
+        dt{
+            padding: 0 0 0 23px;
+        }
+        dd{
+            padding: 15px 0 38px 100px;
+            &:last-child{
+                padding: 15px 0 0 100px;
+            }
+        }
+    }
+}
+// ============================
+// 10_専門家コラム (column.html) +
+// ============================
+.l-column{
+    font-size: 14px;
+    h2{
+        padding: 0 0 27px;
+    }
+    h3{
+        padding: 0 0 17px;
+    }
+    h4{
+        padding: 0 0 20px;
+    }
+    .columnbox{
+        @extend %extend-cf;
+        margin: 0 0 30px 0;
+    }
+    .columnbox-thumb{
+        width: 162px;
+        float: left;
+    }
+    .columnbox-text{
+        width: 618px;
+        float: left;
+        color: #333333;
+        p{
+            line-height: 20px;
+            width: 618px;
+            padding: 8px 0 0 0;
+            &.date{
+                font-weight: bold;
+                color: #333333;
+                padding: 0 0 3px 0;
+                border-bottom: 2px solid #b5b5b5;
+            }
+        }
+        .read-more{
+            text-align: right;
+            padding: 3px;
+            a{
+                color: #e8340c;
+                font-weight: bold;
+            }
+        }
+    }
+    .pagination{
+        padding: 27px 0 90px 0;
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                padding: 0 0 0 14px;
+                a{
+                    color: #e8340c;
+                }
+            }
+        }
+    }
+}
+.l-blog{
+    @extend .l-column;
+}
+
+/*==============================
+13_single-blog (single-blog.html)
+==============================*/
+.l-single-blog{
+    padding: 0 0 80px 0;
+    @extend %extend-cf;
+    h2{
+       padding: 0 0 31px 0;
+    }
+    h3{
+        padding: 0 0 1px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 1.857;
+        color: #2b2b2b;
+        letter-spacing: 0px;
+        display: block;
+        margin: 0 0 29px 0;
+    }
+    .date{
+        width: 100%;
+        border-bottom: 2px solid #b5b5b5;
+        padding: 0 0 4px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        margin: 0 0 9px 0;
+        letter-spacing: 0.1px;
+    }
+    .single-blog-box{
+        @extend %extend-cf;
+        .single-blog-box-text{
+            width: 520px;
+            float: left;
+        }
+        .single-blog-box-thumb{
+            padding: 0 0 0 20px;
+            float: right;
+            width: 240px;
+        }
+    }
+    .blog-navi{
+        margin: 25px 0 0;
+        text-align: center;
+        font-size: 14px;
+        color: #626262;
+           li{
+            display: inline;
+            padding: 0 80px 0 0;
+            letter-spacing: -1px;
+            &:last-child{
+                padding: 0;
+            }
+            a{
+                color: #e8340c;
+                font-weight: bold;
+            }
+         }
+    }
+}
+/*==============================
+company
+==============================*/
+.l-company{
+    padding: 0 0 438px 0;
+    @extend %extend-cf;
+    h2{
+       padding: 0 0 27px 0;
+    }
+    h3{
+        padding: 0 0 10px;
+    }
+    .company-table{
+        margin: 0 0 32px 0;
+        @extend %extend-cf;
+        .date-month{
+            float: right;
+            margin: 0 17px 0 0;
+        }
+        table{
+            font-size: 12px;
+            color: #333333;
+            border: 1px solid #a6a6a6;
+            border-bottom: none;
+            letter-spacing: 1px;
+            tr{
+                border-bottom: 1px solid #a6a6a6;
+                height: 39px;
+                th{
+                    width: 122px;
+                    padding: 0 0 0 16px;
+                    line-height: 3.25;
+                    background: #e8e8e8;
+                    font-weight: bold;
+                }
+                td{
+                    width: 642px;
+                    padding: 0 0 0 16px;
+                }
+            }
+        }
+    }
+}
+/*==============================
+ ============================
+ estimate.html
+==============================*/
+
+.l-estimate{
+    h2{
+        padding: 0 0 27px;
+    }
+    h3{
+        padding: 0 0 10px;
+    }
+    p{
+        font-size: 14px;
+        color: #333333;
+        margin: 0 0 45px 0;
+        line-height: 26px;
+        &.notice{
+            text-align: right;
+            margin: 0 40px 7px 0;
+            font-size: 12px;
+        }
+        &.example{
+            padding: 10px 0 0 0;
+            margin: 0;
+            line-height: 0;
+        }
+        &.example-2{
+            padding: 0 0 10px 0;
+            margin: 0;
+            line-height: 18px;
+        }
+        a{
+            color:#e91006;
+        }
+    }
+    ul{
+        padding: 0 0 20px 0;
+        li{
+            font-size: 14px;
+            color: #333333;
+            padding: 6px 0 7px 0;
+            &:before{
+                content: "◆";
+                margin: 0 2px 0 0;
+            }
+        }
+    }
+    .estimate-price{
+        text-align: center;
+        padding: 7px 0 23px;
+        img{
+            display: inline;
+            &:first-child{
+                padding: 0 17px 0 0;
+            }
+        }
+    }
+    .estimate-map{
+        padding: 14px 0 17px 0;
+    }
+    .message{
+        text-align: center;
+        padding: 7px 0 11px 0;
+    }
+    span{
+        &.red{
+        color: #9c0001;
+        font-weight: bold;
+    }
+        &.wanted-date{
+            font-weight: bold;
+            padding: 0 12px 0 0;
+            color: #333333;
+        }
+    }
+        table{
+            font-size: 14px;
+            width: 700px;
+            margin: 0 auto;
+            color: #333333;
+            th{
+                background: red;
+                width: 133px;
+                font-weight: bold;
+                background: #f7f7f7;
+                vertical-align: top;
+                line-height: 20px;
+            }
+            td{
+                width: 533px;
+        }
+            th,td{
+                border: 1px solid #7d7d7d;
+                padding: 20px 0 20px 15px;
+        }
+
+            input[type=radio]{
+                margin: 0 0 10px 8px;
+            }
+            .text1{
+                width: 292px;
+                height:19px;
+                margin: 0 0 5px 0;
+            }
+            .text2{
+                width: 392px;
+                height: 19px;
+                margin: 0 0 5px 0;
+            }
+            .text3{
+                width: 220px;
+                height: 19px;
+                margin: 0 0 5px 0;
+            }
+            .text4{
+                width: 473px;
+                height: 114px;
+            }
+    }
+    .estimate-btn{
+        text-align: center;
+        padding: 30px 0 86px 0;
     }
 }
 // ============================
@@ -437,6 +832,33 @@
 			margin:0 0 15px 0;
 		}
 	}
+}
+
+// =================================
+// l-side-sblog for single-blog.html
+// =================================
+.l-side-sblog{
+    .side-sblog-navi{
+        padding:0 0 25px 0;
+        color: #720f10;
+        font-size: 12px;
+		li {
+			margin:0 0 12px 0;
+            letter-spacing: -0.3px;
+            &:first-child{
+                padding: 0 0 5px;
+            }
+            &:nth-child(n+2){
+                &:before{
+                    content: "・";
+                    margin: 0 0 0 6px;
+                }
+            }
+            a{
+                color: #720f10;
+            }
+		}
+    }
 }
 
 // ============================

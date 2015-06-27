@@ -16,8 +16,9 @@ output_style = :expanded
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
+cache=         false
 
-sass_options = {:cache_location => "/dev/null"} 
+#sass_options = {:cache_location => "/dev/null"}
 
 
 # If you prefer the indented syntax, you might want to regenerate this
