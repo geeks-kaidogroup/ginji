@@ -184,14 +184,6 @@ a:hover, a:active, a:focus {
   width: 200px;
 }
 .l-contents .l-breadcrumb {
-  padding: 0 0 15px;
-  color: #333333;
-  font-size: 14px;
-}
-.l-contents .l-breadcrumb a {
-  color: #004986;
-}
-.l-contents .l-breadcrumb {
   padding: 0 0 10px;
   color: #333333;
   font-size: 14px;
