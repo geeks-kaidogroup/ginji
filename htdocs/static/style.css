@@ -195,13 +195,13 @@ a:hover, a:active, a:focus {
 /*==============================
 03_専門店の強み_銀次様 strong.html
 ==============================*/
-.page-strong h2, page-introduce h2 {
+.page-strong h2, .page-introduce h2 {
   padding: 0 0 30px;
 }
-.page-strong h3, page-introduce h3 {
+.page-strong h3, .page-introduce h3 {
   padding: 0 0 15px;
 }
-.page-strong h4, page-introduce h4 {
+.page-strong h4, .page-introduce h4 {
   padding: 0 0 20px;
 }
 
@@ -845,6 +845,9 @@ company
   margin: 0 0 15px 0;
 }
 
+/* =================================
+ l-side-sblog for single-blog.html
+ ==================================*/
 .l-side-sblog .side-sblog-navi {
   padding: 0 0 25px 0;
   color: #720f10;

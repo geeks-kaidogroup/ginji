@@ -133,7 +133,7 @@
 /*==============================
 03_専門店の強み_銀次様 strong.html
 ==============================*/
-.page-strong, page-introduce{
+.page-strong, .page-introduce{
     h2{
         padding: 0 0 30px;
     }
@@ -824,9 +824,9 @@ company
 	}
 }
 
-// =================================
-// l-side-sblog for single-blog.html
-// =================================
+/* =================================
+ l-side-sblog for single-blog.html
+ ==================================*/
 .l-side-sblog{
     .side-sblog-navi{
         padding:0 0 25px 0;
